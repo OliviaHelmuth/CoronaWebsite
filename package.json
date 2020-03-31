@@ -1,0 +1,18 @@
+{
+  "name": "learn_jquery",
+  "version": "1.0.0",
+  "description": "me learning jquery",
+  "main": "  ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olivia Helmuth",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
