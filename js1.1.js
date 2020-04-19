@@ -5,7 +5,7 @@
     let numberOfSheets = document.getElementById("input4Sheets").value;
     let days =  (400*numberOfRolls) / (frequency*numberOfSheets);
     if (days >= 1 ) {
-      document.getElementById('calculatorOutput').innerHTML = "You can enjoy your time on the toilet for " + days + "more days !";
+      document.getElementById('calculatorOutput').innerHTML = "You can enjoy your time on the toilet for " + days + " more days !";
     }
     else {
       document.getElementById('calculatorOutput').innerHTML = "You just have a bit paper left, good luck finding new paper !";
