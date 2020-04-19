@@ -139,49 +139,48 @@
   <div class="container-fluid calculator-section">
     <div class="text-center">
       <h1>Toilet paper calculator</h1>
-      </div>
-      <form>
-        <div class="form-row justify-content-center">
-          <div class="form-group col-md-3">
-            <label for="input4Rolls">How many rolls of toilet paper do you have ?</label>
-            <input type="number" min="0" class="form-control" id="input4Rolls" placeholder="">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="input4Frequency">How often do you use toilet paper per day ?</label>
-            <input type="number" min="0" class="form-control" id="input4Frequency" placeholder="">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="input4Sheets">How many sheets do you usually use ?</label>
-            <input type="number" min="0" class="form-control" id="input4Sheets" placeholder="">
-          </div>
+    </div>
+    <form>
+      <div class="form-row justify-content-center">
+        <div class="form-group col-md-3">
+          <label for="input4Rolls">How many rolls of toilet paper do you have ?</label>
+          <input type="number" min="0" class="form-control" id="input4Rolls" required>
         </div>
-        <div class="text-center">
-        <button onclick="toiletPaperCalculator()" id="calculate-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <div class="form-group col-md-3">
+          <label for="input4Frequency">How often do you use toilet paper per day ?</label>
+          <input type="number" min="0" class="form-control" id="input4Frequency" required>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="input4Sheets">How many sheets do you usually use ?</label>
+          <input type="number" min="0" class="form-control" id="input4Sheets" required>
+        </div>
+      </div>
+      <div class="text-center">
+        <button onclick="toiletPaperCalculator()" id="calculate-button" type="button" class="btn btn-primary"
+          data-toggle="modal" data-target="#exampleModalCenter">
           Calculate !
         </button>
       </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-          aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                </button>
-              </div>
-              <div class="modal-body" id="calculatorOutput">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Let's poop !</button>
-              </div>
+    </form>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+              </button>
+            </div>
+            <div class="modal-body" id="calculatorOutput">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Let's poop !</button>
             </div>
           </div>
         </div>
-      </form>
-  
+      </div>
   </div>
-
 </body>
 
 </html>
