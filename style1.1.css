@@ -1,19 +1,9 @@
 #smaller_header {
     font-size: 0.5em;
 }
-
-#recipe_pic {}
-
-body {
-    /* background-color: #000; */
-}
-
-.my-list {}
-
 .subscribe-container {
     margin-top: 1em;
 }
-
 .landing-section {
     height: 94vh;
     background-color: rgb(142, 199, 44);
@@ -21,29 +11,33 @@ body {
     font-size: 5em;
     border-radius: 5px
 }
-
 .landing-section form {
     margin-bottom: 150px;
 }
-
 .my-section {
     padding: 4rem 0rem;
 }
-
 .my-section--grey {
     background-color: rgb(247, 247, 247);
     border-radius: 5px;
 }
-
 .calculator-section {
     background-color: rgb(142, 199, 44);
     border-radius: 5px;
 }
-
 .calculator-section h1 {
     padding: 2rem;
+    color: white;
 }
-
 #calculate-button {
     margin: 2rem;
+}
+#delete-button {
+    padding: ;
+}
+#shopping-list-input-item {
+    background-color: white;
+}
+#toilet-form label{
+    color: white;
 }

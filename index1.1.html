@@ -15,6 +15,7 @@
 
 <body>
 
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -30,24 +31,16 @@
           <a class="nav-link" href="#recipe">Recipe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#toilet-form">Calculator</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shopping list</a>
         </li>
       </ul>
     </div>
   </nav>
 
-
+  <!-- landing section -->
   <div class="container-fluid">
     <div class="row align-items-center landing-section text-center" id="home">
       <div class="col">
@@ -64,12 +57,12 @@
       </div>
     </div>
   </div>
+  <!-- recipes -->
   <div class="my-section" id="recipe">
     <div class="container-fluid ">
       <div class="row justify-content-around align-items-center">
         <div class="col-sm-12 col-lg-5 ">
           <h2>Recipe Idea</h2>
-
           <ol class="my-list">
             <li>cook noodles for 15 minutes</li>
             <li>cut toilet paper in small slices, leave some aside and then form little balls and also cook them for 3
@@ -87,13 +80,14 @@
       </div>
     </div>
   </div>
-
   <div class="my-section my-section--grey" id="recipe">
     <div class="container-fluid ">
       <div class="row justify-content-around align-items-center">
+        <div class="col-sm-12 col-lg-5 col-xl-4 text-center">
+          <img style="width: 100%; border-radius: 5px" id="recipe_pic" src="./pics/package.jpg" alt="paper noodles">
+        </div>
         <div class="col-sm-12 col-lg-5 ">
           <h2>Recipe Idea</h2>
-
           <ol class="my-list">
             <li>cook noodles for 15 minutes</li>
             <li>cut toilet paper in small slices, leave some aside and then form little balls and also cook them for 3
@@ -104,14 +98,10 @@
           </ol>
           <p><i>Voila ! Bon appetit !</i></p>
         </div>
-        <div class="col-sm-12 col-lg-5 col-xl-4 text-center">
-          <img style="width: 100%; border-radius: 5px" id="recipe_pic" src="./pics/Nudeln-à-la-Papier-de-Klo.jpg"
-            alt="paper noodles">
-        </div>
       </div>
     </div>
   </div>
-  <br><br>
+  <!-- carousel -->
   <div class="container">
     <div id="carouselContent" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -136,6 +126,7 @@
       </a>
     </div>
   </div>
+  <!-- toilet paper calculator -->
   <div class="container-fluid calculator-section">
     <div class="text-center">
       <h1>Toilet paper calculator</h1>
@@ -144,42 +135,67 @@
       <div class="form-row justify-content-center">
         <div class="form-group col-md-3">
           <label for="input4Rolls">How many rolls of toilet paper do you have ?</label>
-          <input type="number" min="0" class="form-control" id="input4Rolls" required>
+          <input type="text" class="form-control" id="input4Rolls" required>
         </div>
         <div class="form-group col-md-3">
           <label for="input4Frequency">How often do you use toilet paper per day ?</label>
-          <input type="number" min="0" class="form-control" id="input4Frequency" required>
+          <input type="text" class="form-control" id="input4Frequency" required>
         </div>
         <div class="form-group col-md-3">
           <label for="input4Sheets">How many sheets do you usually use ?</label>
-          <input type="number" min="0" class="form-control" id="input4Sheets" required>
+          <input type="text" class="form-control" id="input4Sheets" required>
         </div>
       </div>
       <div class="text-center">
-        <button id="calculate-button" type="submit" class="btn btn-primary"
-          data-toggle="modal" data-target="#exampleModalCenter">
+        <button id="calculate-button" type="submit" class="btn btn-info" data-toggle="modal"
+          data-target="#exampleModalCenter">
           Calculate !
         </button>
       </div>
     </form>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-            </div>
-            <div class="modal-body" id="calculatorOutput">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Let's poop !</button>
-            </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          </div>
+          <div class="modal-body" id="calculatorOutput">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Let's poop !</button>
           </div>
         </div>
       </div>
+    </div>
   </div>
+  <!-- shopping list -->
+  <div class="container" id="shopping-list">
+    <div class="text-center">
+      <h1>Shopping list</h1>
+    </div>
+    <div class="justify-content-center">
+      <div class="col-sm-4 ">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Text input with checkbox" id="shopping-list-input">
+          <button type="submit" class="btn btn-success" id="submit-shopping-item">submit</button>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with checkbox" value="item" disabled
+            id="shopping-list-input-item">
+          <button type="button" class="btn btn-danger" id="delete-button">delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./js1.1.js"></script>
 </body>
 
