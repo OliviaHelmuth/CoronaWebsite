@@ -6,38 +6,70 @@
 }
 .landing-section {
     height: 94vh;
-    background-color: rgb(142, 199, 44);
     color: white;
     font-size: 5em;
-    border-radius: 5px
 }
 .landing-section form {
     margin-bottom: 150px;
 }
+.landing-section input {
+    padding: 22px;
+}
+.landing-section button {
+    padding: 10px;
+}
+.myButton {
+    color: white;
+    background-color: #B06469;
+}
+.myButton:hover {
+    background-color: #804351;
+    color: white;
+}
 .my-section {
     padding: 4rem 0rem;
 }
-.my-section--grey {
-    background-color: rgb(247, 247, 247);
-    border-radius: 5px;
-}
-.calculator-section {
-    background-color: rgb(142, 199, 44);
-    border-radius: 5px;
-}
 .calculator-section h1 {
-    padding: 2rem;
+    padding-bottom: 1rem;
     color: white;
 }
 #calculate-button {
-    margin: 2rem;
+    margin-top: 4rem;
 }
-#delete-button {
-    padding: ;
-}
-#shopping-list-input-item {
-    background-color: white;
+.addedItem {
+    background-color: white !important;
 }
 #toilet-form label{
     color: white;
+    padding-top: 0.5rem;
+}
+#shoppingList {
+    margin: 1rem 0rem !important;
+}
+.green {
+    background-color: #7ABF55!important;
+}
+.light-color {
+    background-color: #F2F2EE!important;
+}
+.border {
+    border-radius: 5px
+}
+#navbarNavDropdown a {
+    color: rgba(0, 0, 0, 0.5);
+}
+#navbarNavDropdown a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+.recipe h2 {
+    padding: 0 0 1.5rem 1.5rem; 
+}
+.recipe p {
+    text-align: end;
+    padding: 1.5rem; 
+}
+#Tic-Tac-Toe button {
+    margin: 0.5rem;
+    height: 5rem;
+    width: 5rem;
 }
