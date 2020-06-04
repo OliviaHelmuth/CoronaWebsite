@@ -27,7 +27,8 @@
     color: white;
 }
 .my-section {
-    padding: 4rem 0rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .calculator-section h1 {
     padding-bottom: 1rem;
@@ -49,6 +50,9 @@
 .green {
     background-color: #7ABF55!important;
 }
+.red-color {
+    color: #B06469!important;
+}
 .light-color {
     background-color: #F2F2EE!important;
 }
@@ -68,8 +72,18 @@
     text-align: end;
     padding: 1.5rem; 
 }
-#Tic-Tac-Toe button {
+#Tic-Tac-Toe h1{
+    margin-bottom: 4rem;
+}
+#Tic-Tac-Toe-Wrapper button {
     margin: 0.5rem;
     height: 5rem;
     width: 5rem;
+    font-size: 260%;
+    font-weight: 400;
+}
+#resetButton {
+    width: 90%;
+    height: 3rem;
+    margin: 2rem 0;
 }
