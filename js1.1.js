@@ -87,10 +87,12 @@ const lookUpWon = [
 function game() {
     if (count % 2 === 0) {
         this.innerHTML = "0";
+        this.classList.add("red-color");
         playerOne.push(this.id);
     }
     else {
         this.innerHTML = "X";
+        this.classList.remove("red-color");
         playerTwo.push(this.id);
     }
     count++;
@@ -104,7 +106,8 @@ function whoWon() {
         if (lookUpWon[i].every(function (elem) {
             return playerOne.includes(elem)
         })) {
-            alert("Player 1 won !");
+            $("#ticTacToeOutput").html("Player 1 won!");
+            $("#modalTicTacToe").modal("show");
             disableAfterVictory();
             return;
         }
@@ -113,13 +116,15 @@ function whoWon() {
         if (lookUpWon[i].every(function (elem) {
             return playerTwo.includes(elem)
         })) {
-            alert("Player 2 won !");
+          $("#ticTacToeOutput").html("Player 2 won!");
+          $("#modalTicTacToe").modal("show");
             disableAfterVictory();
             return;
         }
     }
     if (count === 9) {
-        alert("draw !")
+      $("#ticTacToeOutput").html("Draw !");
+      $("#modalTicTacToe").modal("show");
     }
 }
 function displayWhosTurn() {
