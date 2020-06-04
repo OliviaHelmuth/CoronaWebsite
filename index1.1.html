@@ -97,33 +97,8 @@
       </div>
     </div>
   </div>
-  <!-- carousel -->
-  <!-- <div class="container">
-    <div id="carouselContent" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active text-center p-4">
-          <p>"First quote goes here."</p>
-          <p style="color:black; font-size:14px; text-transform: uppercase; font-weight: bold; font-style:italic">First
-            Last</p>
-        </div>
-        <div class="carousel-item text-center p-4">
-          <p>"Second quote goes here."</p>
-          <p style="color:black; font-size:14px; text-transform: uppercase; font-weight: bold; font-style:italic">First
-            Last</p>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div> -->
   <!-- toilet paper calculator -->
-  <div class="container-fluid calculator-section green border ">
+  <div class="container-fluid calculator-section green border my-section">
     <div class="text-center">
       <h1>Toilet paper calculator</h1>
     </div>
@@ -183,27 +158,27 @@
   </div>
   <!-- games -->
   <div class="light-color border my-section">
-    <div class="container">
+    <div class="container" id="Tic-Tac-Toe">
       <div class="text-center">
         <h1>Tic Tac Toe</h1>
       </div>
-      <div id="Tic-Tac-Toe">
+      <div id="Tic-Tac-Toe-Wrapper">
         <div class="row justify-content-center">
-          <div class="col-sm-4">
+          <div class="col-sm-4 text-center">
             <button type="button" class="btn btn-outline-success" id="button1"></button>
             <button type="button" class="btn btn-outline-success" id="button2"></button>
             <button type="button" class="btn btn-outline-success" id="button3"></button>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-4">
+          <div class="col-sm-4 text-center">
             <button type="button" class="btn btn-outline-success" id="button4"></button>
             <button type="button" class="btn btn-outline-success" id="button5"></button>
             <button type="button" class="btn btn-outline-success" id="button6"></button>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-4">
+          <div class="col-sm-4 text-center">
             <button type="button" class="btn btn-outline-success" id="button7"></button>
             <button type="button" class="btn btn-outline-success" id="button8"></button>
             <button type="button" class="btn btn-outline-success" id="button9"></button>
@@ -211,7 +186,7 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-sm-4">
+        <div class="col-sm-4 text-center">
           <button type="button" class="btn btn-outline-success" id="resetButton">Reset</button>
         </div>
       </div>
@@ -224,12 +199,12 @@
     </div>
   </div>
   <!-- modal for TicTacToe -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  <div class="modal fade" id="modalTicTacToe" tabindex="-1" role="dialog" aria-labelledby="modalTicTacToeTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Result</h5>
+          <h5 class="modal-title" id="modalTicTacToeTitle">Result</h5>
         </div>
         <div class="modal-body" id="ticTacToeOutput">
         </div>
