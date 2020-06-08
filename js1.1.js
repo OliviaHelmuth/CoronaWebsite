@@ -87,12 +87,12 @@ const lookUpWon = [
 function game() {
     if (count % 2 === 0) {
         this.innerHTML = "0";
-        this.classList.add("red-color");
+        this.classList.add("red-font");
         playerOne.push(this.id);
     }
     else {
         this.innerHTML = "X";
-        this.classList.remove("red-color");
+        this.classList.remove("red-font");
         playerTwo.push(this.id);
     }
     count++;
