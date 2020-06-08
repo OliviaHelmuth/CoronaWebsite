@@ -47,15 +47,7 @@
 #shoppingList {
     margin: 1rem 0rem !important;
 }
-.green {
-    background-color: #7ABF55!important;
-}
-.red-color {
-    color: #B06469!important;
-}
-.light-color {
-    background-color: #F2F2EE!important;
-}
+
 .border {
     border-radius: 5px
 }
@@ -86,4 +78,29 @@
     width: 90%;
     height: 3rem;
     margin: 2rem 0;
+}
+#footer i:hover {
+    color:#804351!important;
+}
+/* colors */
+.green {
+    background-color: #7ABF55!important;
+}
+.red-font {
+    color: #B06469!important;
+}
+.red-background {
+    background-color: #B06469!important;
+}
+.dark-red-background {
+    background-color: #804351!important;
+}
+.light-color {
+    background-color: #F2F2EE!important;
+}
+.white-background {
+    background-color: white!important;
+}
+.white-font {
+    color: white!important;
 }
