@@ -149,10 +149,12 @@
     <div class="row justify-content-center">
       <div class="col-sm-4 ">
         <div class="input-group mb-3" id="shoppingList">
-
-          <input type="text" class="form-control" aria-label="Text input with checkbox" id="shopping-list-input">
-          <button id="add-item-button" type="button" class="btn btn-success">submit</button>
-
+          <div class="shopping-list-input-cont input-group">
+            <input type="text" class="form-control" aria-label="Text input with checkbox" id="shopping-list-input">
+            <button id="add-item-button" type="button" class="btn btn-success">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -162,6 +164,11 @@
     <div class="container" id="Tic-Tac-Toe">
       <div class="text-center">
         <h1>Tic Tac Toe</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-4 text-center">
+          <p id="playerTurn">Player 1</p>
+        </div>
       </div>
       <div id="Tic-Tac-Toe-Wrapper">
         <div class="row justify-content-center">
@@ -192,8 +199,7 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-sm-4">
-          <p id="playerTurn">Player 1</p>
+        <div class="col-sm-4 text-center">
           <p>please click reset to start a new game</p>
         </div>
       </div>
@@ -222,18 +228,19 @@
       <div class="col-md-12 py-5">
         <div class="sm-5 text-center">
           <!--Linkedin -->
-          <a class="li-ic" href="https://www.linkedin.com/in/olivia-h-a184731a3/" target="_blank">
+          <a class="footer-icon" href="https://www.linkedin.com/in/olivia-h-a184731a3/" target="_blank">
             <i class="red-font fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
+          <!-- Email -->
+          <a class="footer-icon" href="mailto:Olivia.Helmuth@pm.me">
+            <i class="red-font far fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x">
+            </i>
+          </a>
           <!--GitHub-->
-          <a class="Gi-ic" href="https://github.com/OliviaHelmuth" target="_blank">
+          <a class="footer-icon" href="https://github.com/OliviaHelmuth" target="_blank">
             <i class="red-font fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
           </a>
-          <!-- Email -->
-            <a href="mailto:someone@example.com">
-              <i class="red-font far fa-envelope fa-lg white-text mr-md-5 mr-3 fa-2x">
-              </i>
-            </a>
+
         </div>
       </div>
     </div>

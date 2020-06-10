@@ -44,12 +44,28 @@
     color: white;
     padding-top: 0.5rem;
 }
+.shopping-list-input-cont {
+    margin-bottom: 1rem;
+}
 #shoppingList {
     margin: 1rem 0rem !important;
 }
-
 .border {
     border-radius: 5px
+}
+.checkbox {
+    /* height: 2rem;
+    width: 2rem;
+    margin: -4px !important; */
+}
+/* .labelForList {
+    margin-left: 1rem;
+} */
+.strikethrough {
+  text-decoration: line-through;
+}
+.delete-icon:hover {
+    color:#804351!important;
 }
 #navbarNavDropdown a {
     color: rgba(0, 0, 0, 0.5);
@@ -79,8 +95,15 @@
     height: 3rem;
     margin: 2rem 0;
 }
+#playerTurn {
+    font-size: 1.5rem;
+}
 #footer i:hover {
     color:#804351!important;
+}
+.footer-icon {
+    padding-left: 2rem;
+    padding-right:2rem;
 }
 /* colors */
 .green {

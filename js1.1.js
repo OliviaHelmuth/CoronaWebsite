@@ -1,4 +1,5 @@
 // toilet paper calc
+let numForInput = 0
 const toiletForm = document.getElementById("toilet-form");
 toiletForm.addEventListener("submit", toiletPaperCalculator)
 function toiletPaperCalculator(e) {
@@ -40,28 +41,60 @@ function isValidNumber(value) {
 // shopping list
 let addItemButton = document.getElementById("add-item-button");
 addItemButton.addEventListener("click", addItem);
-let testVar = document.getElementById("test")
+let testVar = document.getElementById("test");
+
 function addItem() {
   let addedItem = document.getElementById("shopping-list-input").value;
   let itemTemplate =
-    `<div class="input-group-prepend">
-       <div class="input-group-text">
-        <input type="checkbox" aria-label="Checkbox for following text input">
-       </div>
-     </div>
-      <input type="text" class="form-control addedItem" aria-label="Text input with checkbox" value="${addedItem}" disabled>
-      <button type="button" class="btn btn-danger delete-button">delete</button>`;
+    ` <div class=" input-group-prepend">
+        <div class="input-group-text">
+          <input class="checkbox" type="checkbox" value="" id="defaultCheck${numForInput}">
+        </div>
+      </div>
+      <label class="form-control addedItem labelForList" for="defaultCheck${numForInput}">
+        ${addedItem}
+      </label>
+      <button type="button" class="btn delete-button"><i class="red-font fas fa-trash delete-icon"></i></button>
+      `;
+    //   `<div class="input-group-prepend">
+    //    <div class="input-group-text">
+    //     <input type="checkbox" aria-label="Checkbox for following text input">
+    //    </div>
+    //  </div>
+    //   <input type="text" class="form-control addedItem" aria-label="Text input with checkbox" value="${addedItem}" disabled>
+    //   <button type="button" class="btn btn-danger delete-button">delete</button>`;
   let addTemplate = document.createElement("div");
   addTemplate.className = "input-group mb-3"
   addTemplate.innerHTML = itemTemplate;
   shoppingList.appendChild(addTemplate);
-  let aDeleteButton = addTemplate.getElementsByClassName('delete-button')[0];
+  let aDeleteButton = addTemplate.getElementsByClassName("delete-button")[0];
+
+  let checkbox = addTemplate.getElementsByClassName("checkbox")[0];
+  checkbox.addEventListener("change", changeListItem )
+
   aDeleteButton.addEventListener("click", deleteButtonExecution);
+
+  numForInput ++;
 }
 function deleteButtonExecution() {
   let parent = this.parentNode.parentNode
   let child = this.parentNode
   parent.removeChild(child)
+}
+
+// document.querySelectorAll(".checkbox").forEach(item => {
+//   item.addEventListener("click", changeListItem)
+// })
+
+function changeListItem() {
+  if (this.checked === true) {
+    this.parentNode.parentNode.parentNode.querySelector(".labelForList").classList.add("strikethrough");
+  }
+  else {
+    this.parentNode.parentNode.parentNode.querySelector(".labelForList").classList.remove("strikethrough");
+  }
+  // $(this).parent().find('.labelForList').toggleClass('strikethrough ')
+
 }
 // Tic Tac Toe
 const playerTurn = document.getElementById("playerTurn");
