@@ -101,10 +101,13 @@
 #footer i:hover {
     color:#804351!important;
 }
-.footer-icon {
+#footer a {
+    text-decoration: none;
+}
+/* .footer-icon {
     padding-left: 2rem;
     padding-right:2rem;
-}
+} */
 /* colors */
 .green {
     background-color: #7ABF55!important;

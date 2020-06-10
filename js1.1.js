@@ -1,5 +1,4 @@
 // toilet paper calc
-let numForInput = 0
 const toiletForm = document.getElementById("toilet-form");
 toiletForm.addEventListener("submit", toiletPaperCalculator)
 function toiletPaperCalculator(e) {
@@ -39,6 +38,7 @@ function isValidNumber(value) {
   }
 }
 // shopping list
+let numForInput = 0
 let addItemButton = document.getElementById("add-item-button");
 addItemButton.addEventListener("click", addItem);
 let testVar = document.getElementById("test");
@@ -56,13 +56,6 @@ function addItem() {
       </label>
       <button type="button" class="btn delete-button"><i class="red-font fas fa-trash delete-icon"></i></button>
       `;
-    //   `<div class="input-group-prepend">
-    //    <div class="input-group-text">
-    //     <input type="checkbox" aria-label="Checkbox for following text input">
-    //    </div>
-    //  </div>
-    //   <input type="text" class="form-control addedItem" aria-label="Text input with checkbox" value="${addedItem}" disabled>
-    //   <button type="button" class="btn btn-danger delete-button">delete</button>`;
   let addTemplate = document.createElement("div");
   addTemplate.className = "input-group mb-3"
   addTemplate.innerHTML = itemTemplate;
