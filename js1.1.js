@@ -61,20 +61,16 @@ function addItem() {
   addTemplate.innerHTML = itemTemplate;
   shoppingList.appendChild(addTemplate);
   let aDeleteButton = addTemplate.getElementsByClassName("delete-button")[0];
-
   let checkbox = addTemplate.getElementsByClassName("checkbox")[0];
-  checkbox.addEventListener("change", changeListItem )
-
+  checkbox.addEventListener("change", changeListItem)
   aDeleteButton.addEventListener("click", deleteButtonExecution);
-
-  numForInput ++;
+  numForInput++;
 }
 function deleteButtonExecution() {
   let parent = this.parentNode.parentNode
   let child = this.parentNode
   parent.removeChild(child)
 }
-
 // document.querySelectorAll(".checkbox").forEach(item => {
 //   item.addEventListener("click", changeListItem)
 // })
@@ -87,96 +83,94 @@ function changeListItem() {
     this.parentNode.parentNode.parentNode.querySelector(".labelForList").classList.remove("strikethrough");
   }
   // $(this).parent().find('.labelForList').toggleClass('strikethrough ')
-
 }
 // Tic Tac Toe
 const playerTurn = document.getElementById("playerTurn");
 const resetButton = document.getElementById("resetButton");
 for (let i = 1; i < 10; i++) {
-    const button = document.getElementById("button" + i);
-    button.addEventListener("click", game);
+  const button = document.getElementById("button" + i);
+  button.addEventListener("click", game);
 }
 resetButton.addEventListener("click", reset);
 let count = 0;
 let playerOne = [];
 let playerTwo = [];
 const lookUpWon = [
-    ["button1", "button2", "button3"],
-    ["button4", "button5", "button6"],
-    ["button7", "button8", "button9"],
-    ["button1", "button4", "button7"],
-    ["button2", "button5", "button8"],
-    ["button3", "button6", "button9"],
-    ["button1", "button5", "button9"],
-    ["button3", "button5", "button7"]
+  ["button1", "button2", "button3"],
+  ["button4", "button5", "button6"],
+  ["button7", "button8", "button9"],
+  ["button1", "button4", "button7"],
+  ["button2", "button5", "button8"],
+  ["button3", "button6", "button9"],
+  ["button1", "button5", "button9"],
+  ["button3", "button5", "button7"]
 ];
 function game() {
-    if (count % 2 === 0) {
-        this.innerHTML = "0";
-        this.classList.add("red-font");
-        playerOne.push(this.id);
-    }
-    else {
-        this.innerHTML = "X";
-        this.classList.remove("red-font");
-        playerTwo.push(this.id);
-    }
-    count++;
-    setTimeout(displayWhosTurn, 100);
-    this.setAttribute("disabled", "disabled");
-    whoWon()
+  if (count % 2 === 0) {
+    this.innerHTML = "0";
+    this.classList.add("red-font");
+    playerOne.push(this.id);
+  }
+  else {
+    this.innerHTML = "X";
+    this.classList.remove("red-font");
+    playerTwo.push(this.id);
+  }
+  count++;
+  setTimeout(displayWhosTurn, 100);
+  this.setAttribute("disabled", "disabled");
+  whoWon()
 }
 function whoWon() {
-    // it just needs to execute if count > 4
-    for (let i = 0; i < lookUpWon.length; i++) {
-        if (lookUpWon[i].every(function (elem) {
-            return playerOne.includes(elem)
-        })) {
-            $("#ticTacToeOutput").html("Player 1 won!");
-            $("#modalTicTacToe").modal("show");
-            disableAfterVictory();
-            return;
-        }
-    }
-    for (let i = 0; i < lookUpWon.length; i++) {
-        if (lookUpWon[i].every(function (elem) {
-            return playerTwo.includes(elem)
-        })) {
-          $("#ticTacToeOutput").html("Player 2 won!");
-          $("#modalTicTacToe").modal("show");
-            disableAfterVictory();
-            return;
-        }
-    }
-    if (count === 9) {
-      $("#ticTacToeOutput").html("Draw !");
+  for (let i = 0; i < lookUpWon.length; i++) {
+    if (lookUpWon[i].every(function (elem) {
+      return playerOne.includes(elem)
+    })) {
+      $("#ticTacToeOutput").html("Player 1 won!");
       $("#modalTicTacToe").modal("show");
+      disableAfterVictory();
+      return;
     }
+  }
+  for (let i = 0; i < lookUpWon.length; i++) {
+    if (lookUpWon[i].every(function (elem) {
+      return playerTwo.includes(elem)
+    })) {
+      $("#ticTacToeOutput").html("Player 2 won!");
+      $("#modalTicTacToe").modal("show");
+      disableAfterVictory();
+      return;
+    }
+  }
+  if (count === 9) {
+    $("#ticTacToeOutput").html("Draw !");
+    $("#modalTicTacToe").modal("show");
+  }
 }
 function displayWhosTurn() {
-    let turn;
-    if (count % 2 === 0) {
-        turn = "Player 1"
-    }
-    else {
-        turn = "Player 2"
-    }
-    playerTurn.innerHTML = turn
+  let turn;
+  if (count % 2 === 0) {
+    turn = "Player 1"
+  }
+  else {
+    turn = "Player 2"
+  }
+  playerTurn.innerHTML = turn
 }
 function reset() {
-    count = 0;
-    playerOne = [];
-    playerTwo = [];
-    for (let i = 1; i < 10; i++) {
-        const button = document.getElementById("button" + i);
-        button.innerHTML = "";
-        button.removeAttribute("disabled");
-    }
-    displayWhosTurn();
+  count = 0;
+  playerOne = [];
+  playerTwo = [];
+  for (let i = 1; i < 10; i++) {
+    const button = document.getElementById("button" + i);
+    button.innerHTML = "";
+    button.removeAttribute("disabled");
+  }
+  displayWhosTurn();
 }
 function disableAfterVictory() {
-    for (let i = 1; i < 10; i++) {
-        const button = document.getElementById("button" + i);
-        button.setAttribute("disabled", "disabled");
-    }
+  for (let i = 1; i < 10; i++) {
+    const button = document.getElementById("button" + i);
+    button.setAttribute("disabled", "disabled");
+  }
 }

@@ -53,14 +53,6 @@
 .border {
     border-radius: 5px
 }
-.checkbox {
-    /* height: 2rem;
-    width: 2rem;
-    margin: -4px !important; */
-}
-/* .labelForList {
-    margin-left: 1rem;
-} */
 .strikethrough {
   text-decoration: line-through;
 }
@@ -104,11 +96,6 @@
 #footer a {
     text-decoration: none;
 }
-/* .footer-icon {
-    padding-left: 2rem;
-    padding-right:2rem;
-} */
-/* colors */
 .green {
     background-color: #7ABF55!important;
 }
