@@ -1,119 +1,131 @@
 #smaller_header {
-    font-size: 0.5em;
+  font-size: 0.5em;
 }
 .subscribe-container {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 .landing-section {
-    height: 94vh;
-    color: white;
-    font-size: 5em;
+  height: 94vh;
+  color: white;
+  font-size: 5em;
 }
 .landing-section form {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 .landing-section input {
-    padding: 22px;
+  padding: 22px;
 }
 .landing-section button {
-    padding: 10px;
+  padding: 10px;
+}
+@media (max-width: 719px) {
+  .landing-section button {
+    margin-top: 1rem;
+    width: 75%;
+  }
 }
 .myButton {
-    color: white;
-    background-color: #B06469;
+  color: white;
+  background-color: #b06469;
 }
 .myButton:hover {
-    background-color: #804351;
-    color: white;
+  background-color: #804351;
+  color: white;
 }
 .my-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 991px) {
+  #recipe2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
 .calculator-section h1 {
-    padding-bottom: 1rem;
-    color: white;
+  padding-bottom: 1rem;
+  color: white;
 }
 #calculate-button {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 .addedItem {
-    background-color: white !important;
+  background-color: white !important;
 }
-#toilet-form label{
-    color: white;
-    padding-top: 0.5rem;
+#toilet-form label {
+  color: white;
+  padding-top: 0.5rem;
 }
 .shopping-list-input-cont {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 #shoppingList {
-    margin: 1rem 0rem !important;
+  margin: 1rem 0rem !important;
 }
 .border {
-    border-radius: 5px
+  border-radius: 5px;
 }
 .strikethrough {
   text-decoration: line-through;
 }
 .delete-icon:hover {
-    color:#804351!important;
+  color: #804351 !important;
 }
 #navbarNavDropdown a {
-    color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 #navbarNavDropdown a:hover {
-    color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .recipe h2 {
-    padding: 0 0 1.5rem 1.5rem; 
+  padding: 0 0 1.5rem 1.5rem;
 }
 .recipe p {
-    text-align: end;
-    padding: 1.5rem; 
+  text-align: end;
+  padding: 1.5rem;
 }
-#Tic-Tac-Toe h1{
-    margin-bottom: 4rem;
+#Tic-Tac-Toe h1 {
+  margin-bottom: 4rem;
 }
 #Tic-Tac-Toe-Wrapper button {
-    margin: 0.5rem;
-    height: 5rem;
-    width: 5rem;
-    font-size: 260%;
-    font-weight: 400;
+  margin: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 260%;
+  font-weight: 400;
 }
 #resetButton {
-    width: 90%;
-    height: 3rem;
-    margin: 2rem 0;
+  width: 18rem;
+  height: 3rem;
+  margin: 2rem 0;
 }
 #playerTurn {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 #footer i:hover {
-    color:#804351!important;
+  color: #804351 !important;
 }
 #footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .green {
-    background-color: #7ABF55!important;
+  background-color: #7abf55 !important;
 }
 .red-font {
-    color: #B06469!important;
+  color: #b06469 !important;
 }
 .red-background {
-    background-color: #B06469!important;
+  background-color: #b06469 !important;
 }
 .dark-red-background {
-    background-color: #804351!important;
+  background-color: #804351 !important;
 }
 .light-color {
-    background-color: #F2F2EE!important;
+  background-color: #f2f2ee !important;
 }
 .white-background {
-    background-color: white!important;
+  background-color: white !important;
 }
 .white-font {
-    color: white!important;
+  color: white !important;
 }
